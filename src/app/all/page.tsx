@@ -1,31 +1,9 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from "next/image"
 
-export default function Home() {
+export default function page() {
   return (
-    <>
-      <div className="pt-6">
-        <div className="pl-4 flex flex-row space-x-4">
-          <Link href="/all"><img
-            className="border-2 rounded-lg w-1/2"
-            src="/hoodie-1.png"
-            alt="hoodie"
-          /></Link>
-          <div className="w-1/2 space-y-4">
-            <img
-              className="border-2 rounded-lg"
-              src="/baby-cap-black.png"
-              alt="cap"
-            />
-            <img
-              className="border-2 rounded-lg"
-              src="/baby-onesie-beige-1.png"
-              alt="onesie"
-            />
-          </div>
-        </div>
-        <div className="flex justify-between mx-4 mb-14 overflow-x-auto pt-6">
-        <Image className="border-2 rounded-lg mr-4"
+    <div className="flex flex-row flex-wrap ml-20 mt-6 mb-6">
+    <Image className="border-2 rounded-lg mr-4"
           src="/bag-1-dark.png"
           alt="bag"
           width={300}
@@ -52,7 +30,7 @@ export default function Home() {
         <Image className="border-2 rounded-lg mr-4"
           src="/baby-onesie-beige-1.png"
           alt="onesie"
-          width={1000}
+          width={300}
           height={200}
         />
         <Image className="border-2 rounded-lg mr-4"
@@ -72,9 +50,9 @@ export default function Home() {
           alt="jacket"
           width={300}
           height={200}
-        />
-        </div>
-      </div>
-    </>
-  );
+          />
+          </div>
+          
+          
+  )
 }

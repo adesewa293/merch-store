@@ -1,12 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
+import { getPosts } from "./lib/merchs";
 
-export default function Home() {
+export default async function Home() {
+  const posts = getPosts();
+
   return (
     <>
+   
       <div className="pt-6">
         <div className="pl-4 flex flex-row space-x-4">
-          <Link href="/all"><img
+          <Link href={}><img
             className="border-2 rounded-lg w-1/2"
             src="/hoodie-1.png"
             alt="hoodie"
